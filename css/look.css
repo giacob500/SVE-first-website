@@ -1,5 +1,5 @@
 @font-face {
-    src: url(../fonts/ProductSans-Regular.ttf);
+    src: url(../fonts/ProductSans-Regular.ttf), url(../fonts/ProductSans-Light.ttf);
     font-weight: normal;
     font-style: normal;
     font-family: product_sans_blackregular;
@@ -22,11 +22,13 @@ header {
 
 footer {
     background-color: #050505;
+    color: #808080;
     text-align: center;
     border-radius: 0px 0px 5px 5px;
     font-family: product_sans_blackregular;
     font-size: 90%;
     padding-top: 2%;
+    padding-bottom: 1%;
 }
 
 nav {
@@ -52,24 +54,21 @@ article {
     text-align: center;
 }
 
+table{
+    border: 1px solid #ddd;
+}
+
+th.question{
+    background-color: #050505;
+    padding: 20px;
+}
+
+th.answer{
+    padding: 10px;
+    background-color: #191919;
+}
+
 /*not used*/
-ul {
-    list-style-type: none;
-    margin: o auto;
-    padding: 10px 75px;
-    overflow: hidden;
-    text-align: center;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-}
 
 a.dcan {
     background-color: #111111;
@@ -102,7 +101,11 @@ a#externalimagelink {
 
 /*CLASSES*/
 
-.text-block{
+.social {
+    margin-left: 10px;
+}
+
+.text-block {
     bottom: 20px;
     right: 20px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -114,11 +117,11 @@ a#externalimagelink {
     border-radius: 10px;
 }
 
-.text-block h1{
+.text-block h1 {
     font-size: 180%;
 }
 
-.text-block p{
+.text-block p {
     font-size: 120%;
 }
 
@@ -135,6 +138,20 @@ a#externalimagelink {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+}
+
+.normal_button {
+    background-color: #1c1c1c;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .button span {
@@ -167,7 +184,6 @@ a#externalimagelink {
 
 #container {
     margin: 0 auto;
-    width: 1024px;
 }
 
 #home_background_banner {
