@@ -1,46 +1,43 @@
+@font-face {
+    src: url(../fonts/ProductSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-family: product_sans_blackregular;
+}
+
+/*GENRAL TAGS*/
+
 body {
-    font-family: 'Roboto';
-    background-color: #111111;
-}
-
-#container {
-    margin: 0 auto;
-    width: 1024px;
-    font-family: 'Roboto', 'Roboto-Light';
-    src: url(Roboto-Light.woff);
-}
-
-.container_on_image {
-    position: relative;
-    font-family: Arial;
-}
-
-.text-block {
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    font-family: product_sans_blackregular, Arial;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    background-color: #111111;
+    font-weight: 300;
 }
 
 header {
     background-color: #050505;
-    color: white;
     text-align: center;
     border-radius: 5px 5px 0px 0px;
 }
 
-aside {
+footer {
+    background-color: #050505;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+    font-family: product_sans_blackregular;
+    font-size: 90%;
+    padding-top: 2%;
+}
+
+nav {
     background-color: #111111;
     border: 1px solid #111111;
     margin: 0 auto;
     border-radius: 5px 5px 5px 5px;
+    text-align: center;
 }
 
-nav {
+aside {
     background-color: #111111;
     border: 1px solid #111111;
     margin: 0 auto;
@@ -52,13 +49,26 @@ article {
     border: 1px solid #191919;
     padding: 4px;
     border-radius: 5px 5px 0px 0px;
+    text-align: center;
 }
 
-footer {
-    background-color: #050505;
-    color: white;
+/*not used*/
+ul {
+    list-style-type: none;
+    margin: o auto;
+    padding: 10px 75px;
+    overflow: hidden;
     text-align: center;
-    border-radius: 0px 0px 5px 5px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
 }
 
 a.dcan {
@@ -80,7 +90,7 @@ a:hover, a:active {
     background-color: #111111;
 }
 
-a#serietvt {
+a#externalimagelink {
     background-image: url("serie/thewalking.jpg");
     color: white;
     padding: 10px 32px;
@@ -90,31 +100,31 @@ a#serietvt {
     display: inline-block;
 }
 
-a#serietvl {
-    background-image: url("serie/lacasa.jpg");
+/*CLASSES*/
+
+.text-block{
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 10px 32px;
-    border-radius: 5px 5px 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
 }
 
-a#serietvs {
-    background-image: url("serie/scream.jpg");
-    color: white;
-    padding: 10px 32px;
-    border-radius: 5px 5px 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    background-color: #1c1c1c;
-    text-align: center;
+.text-block h1{
+    font-size: 180%;
+}
+
+.text-block p{
+    font-size: 120%;
 }
 
 .button {
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: #1c1c1c;
     border: none;
     color: #ffffff;
@@ -128,6 +138,7 @@ a#serietvs {
 }
 
 .button span {
+    color: white;
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -152,33 +163,11 @@ a#serietvs {
     right: 0;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
-body {
-    text-align: center;
-}
+/*IDs*/
 
-h1, p, a {
-    font-family: 'Roboto', 'sans-serif';
-    font-weight: 300;
-    margin: 0;
-    text-decoration: none;
-}
-
-#copyright {
-    color: white;
-}
-
-#menubuttonback {
-    color: white;
-    background-color: #1C1C1C;
-}
-
-#roundedpic {
-    border-radius: 50%;
-}
-
-#normalpic {
-    border-radius: 10%;
+#container {
+    margin: 0 auto;
+    width: 1024px;
 }
 
 #home_background_banner {
@@ -192,106 +181,10 @@ h1, p, a {
     background-origin: padding-box;
 }
 
-#font-face {
-    font-family: myFirstFont;
-    src: url(Roboto-Light.woff);
+#roundedpic {
+    border-radius: 50%;
 }
 
-.form-style-6 {
-    font: 95% Arial, Helvetica, sans-serif;
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 16px;
-    background: #2d2d2d;
-}
-
-.form-style-6 h1 {
-    background: #191919;
-    padding: 20px 0;
-    font-size: 140%;
-    font-weight: 300;
-    text-align: center;
-    color: #fff;
-    margin: -16px -16px 16px -16px;
-}
-
-.form-style-6 input[type="text"], .form-style-6 input[type="date"], .form-style-6 input[type="datetime"], .form-style-6 input[type="email"], .form-style-6 input[type="number"], .form-style-6 input[type="search"], .form-style-6 input[type="time"], .form-style-6 input[type="url"], .form-style-6 textarea, .form-style-6 select {
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    outline: none;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    background: #fff;
-    margin-bottom: 4%;
-    border: 1px solid #ccc;
-    padding: 3%;
-    color: #orange;
-    font: 95% Arial, Helvetica, sans-serif;
-}
-
-.form-style-6 input[type="text"]:focus, .form-style-6 input[type="date"]:focus, .form-style-6 input[type="datetime"]:focus, .form-style-6 input[type="email"]:focus, .form-style-6 input[type="number"]:focus, .form-style-6 input[type="search"]:focus, .form-style-6 input[type="time"]:focus, .form-style-6 input[type="url"]:focus, .form-style-6 textarea:focus, .form-style-6 select:focus {
-    box-shadow: 0 0 5px #191919;
-    padding: 3%;
-    border: 1px solid #191919;
-}
-
-.form-style-6 input[type="submit"], .form-style-6 input[type="button"] {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    padding: 3%;
-    background: #191919;
-    border-bottom: 2px solid #111111;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
-    color: #fff;
-}
-
-.form-style-6 input[type="submit"]:hover, .form-style-6 input[type="button"]:hover {
-    background: #212121;
-}
-
-ul {
-    list-style-type: none;
-    margin: o auto;
-    padding: 10px 75px;
-    overflow: hidden;
-    text-align: center;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-}
-
-#sample {border:1px dotted #666666;}
-#sample h2 {text-align:center;}
-#sample p {text-align:center;padding:.4em 3em 0em;color:#000000;}
-#my-form {box-sizing:border-box;margin:0 auto;padding-left:6em;text-align:left;width:70%;color:#009966;}
-#my-form label {color:#000000;}
-#my-form .data-entry {padding:.5em 8%;}
-#my-form textarea {padding:.1em 8%;}
-#my-form p {text-align:left;margin:0;padding:1em 0 .1em;}
-#my-form select {margin-bottom:1em;font-size:95%;padding:.1em .5em;}
-#my-form .button {width:80px;height:30px;font-size:110%;margin:.4em;}
-#my-form .radio {white-space:nowrap;display:inline-block;line-height:2em;margin:.1em 0;}
-#my-form input[type=radio]{margin-right:.6em;}
-/* resize table for mobile */
-@media all and (min-width: 10px) and (max-width:660px) {
-#sample {font-size:90%;border:1px solid #666;width:99%;text-align:center;margin:auto !important;}
-#sample p {margin:0;padding:0 .2em;}
-#my-form {box-sizing:border-box;width:96%;margin:0;padding:1em 1.5em 1em 3.5em;text-align:left !important;}
-#my-form p {margin:0;padding:0 .2em;}
-#my-form .radio {white-space:nowrap;display:inline-block;line-height:1em;margin-top:.2em;}
+#normalpic {
+    border-radius: 10%;
 }
