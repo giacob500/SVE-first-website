@@ -32,7 +32,6 @@ footer {
     color: #808080;
     text-align: center;
     border-radius: 0px 0px 5px 5px;
-    font-family: product_sans_blackregular;
     font-size: 90%;
     padding-top: 2%;
     padding-bottom: 1%;
@@ -45,15 +44,18 @@ nav {
     border-radius: 5px;
     text-align: center;
 }
-
+/*
 aside {
     background-color: #111111;
     border: 1px solid #111111;
+    float: left;
     margin: 0 auto;
     border-radius: 5px;
+    display: block;
 }
-
+*/
 article {
+    min-height: 430px;
     background-color: #191919;
     border: 1px solid #191919;
     padding: 4px;
@@ -61,12 +63,30 @@ article {
     text-align: center;
 }
 
+a{
+    color: aqua;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
 table {
+    float: center;
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
     text-align: justify;
+}
+
+table img{
+    border-radius: 5px;
 }
 
 th.question {
@@ -83,17 +103,6 @@ th.answer {
 }
 
 /*not used*/
-
-a.dcan {
-    background-color: #111111;
-    color: orange;
-    padding: 4px 25px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
 a.pulsantimenu {
     background-color: #191919;
     color: #ffffff;
@@ -195,11 +204,13 @@ a#externalimagelink {
 }
 
 .form_conntact_us {
+    float: left;
     max-width: 300px;
-    margin: 10px auto;
+    margin: 10px ;
     padding: 16px;
     background: #1c1c1c;
-    border-radius: 5px;    
+    border: 1px solid #808080;
+    border-radius: 10px;    
 }
 
 .form_conntact_us h1 {
@@ -208,7 +219,7 @@ a#externalimagelink {
     font-weight: 300;
     text-align: center;
     color: #fff;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     margin: -16px -16px 16px -16px;
 }
 
@@ -267,10 +278,26 @@ a#externalimagelink {
     background-origin: padding-box;
 }
 
-#roundedpic {
+#homepic {
+    width: 5%;
+    height: auto;
     border-radius: 50%;
 }
 
 #normalpic {
-    border-radius: 10%;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+#faqs{
+    margin-right: auto;
+    margin-left: auto;
+    float: center;
+    max-width: 650px;
+}
+
+#list{
+    font-size: 150%;
+    text-align: left;
 }

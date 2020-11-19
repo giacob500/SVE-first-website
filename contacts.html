@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>SVE - Contacts</title>
+	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/look.css">
-	</head>
+	<link rel="icon" href="images/icons/logo_black.png">
+	<title>SVE - Contacts</title>
+</head>
 
 <body>
 	<div id="container">
@@ -23,60 +24,55 @@
 			<button href="faqs.html" class="button" style="vertical-align:middle"><a href="faqs.html"
 					id="menubuttonback"><span>FAQs</span></a></button>
 		</nav>
-		<article>
-			<section>
-				<h1>Identit�</h1>
-				<p id="who">
-				<p>Ciao! Sono Giacomo Lorenzi, nato il 18 Febbraio 2001 a Verona; ho 17 anni, sono alto 1,92 m, ho tre
-					sorelle e frequento l'Istituto Tecnico Statale G.Marconi a Verona.</p>
-			</section>
-		</article>
-		<div class="form_conntact_us">
-			<h1>Contact Us</h1>
-			<form>
-				<input type="text" name="name" placeholder="Name" />
-				<input type="email" name="email" placeholder="ex@mail.net" />
-				<textarea name="message" placeholder="Message"></textarea>
-				<input type="submit" value="Submit" />
-			</form>
-		</div>
-		<br>
-		<div id="sample">
-			<h2>Contact Form</h2>
-			<p>Please click "Submit" after making your selections. Thank you.</p>
-			<form id="my-form">
-			<div id="align">
-			<input type="hidden" name="required" value="name,phone,email" /><br />
-			<input type="hidden" name="title" value="Thank you for contacting Keynote Support" /><br />
-			<input type="hidden" name="return_link_url" value="https://www.keynotesupport.com/index.shtml" />
-			<input type="hidden" name="return_link_title" value="Go to the Homepage" />
-			<label for="name1">NAME:</label><br />
-			<span><input type="text" name="name" id="name1" class="data-entry" /></span><br /><br />
-			<label for="tel">PHONE:</label><br />
-			<span><input type="tel" name="phone" id="tel" class="data-entry" /></span><br /><br />
-			<label for="email">E-MAIL ADDRESS:</label><br />
-			<span><input type="email" name="email" id="email" class="data-entry" /></span><br /><br />
-			<p>SELECT A SOFTWARE PRODUCT:</p><br />
-			<span class="radio"><input type="radio" name="software" value="Excel" />Microsoft Excel</span><br />
-			<span class="radio"><input type="radio" name="software" value="QBP" />QuickBooks Pro</span><br />
-			<span class="radio"><input type="radio" name="software" value="Peachtree" />Peachtree Accounting</span><br />
-			<span class="radio"><input type="radio" name="software" value="Photoshop" />Adobe Photoshop</span><br /><br />
-			
-			<p>WHAT IS YOUR CURRENT LEVEL?</p><br />
-			<span class="radio"><input type="radio" name="level" value="Beginner" />Beginner</span><br />
-			<span class="radio"><input type="radio" name="level" value="Intermediate" />Intermediate</span><br />
-			<span class="radio"><input type="radio" name="level" value="Advanced" />Advanced</span><br /><br />
-			
-			<label for="comments3">COMMENTS:</label><br />
-			<span><textarea name="comments" id="comments3" rows="4" ></textarea></span><br /><br />
-			
-			<span><input type="reset" class="button" value="RESET" />
-			<input type="submit" class="button" value="SUBMIT" /></span><br />
-			
-			</div><!--end div align-->
-			</form>
-			</div><!--end div sample-->
-		<footer>Copyright ©2020 SVE srl. All rights reserved.</footer>
+
+		<section id="faqs">
+			<div class="form_conntact_us">
+				<h1>Contact Us</h1>
+				<form action="mailto: giacob500@gmail.com" method="post" enctype="text/plain">
+					<input type="text" name="name" placeholder="Name" />
+					<input type="email" name="email" placeholder="user@email.net" />
+					<textarea name="message" placeholder="Message"></textarea>
+					<input type="submit" value="Submit" />
+				</form>
+
+			</div>
+			<article id="list">
+				<h1>Contanct informations</h1>
+				<ul>
+					<li>
+						info@studiosve.com
+					</li>
+					<li>
+						tel +39 045 6845093
+					</li>
+					<li>
+						fax +39 045 6845093
+					</li>
+					<br>
+					<li>
+						StudioSve
+					</li>
+					<li>
+						SVE S.r.l.
+					</li>
+					<li>
+						Via Crear, 13
+					</li>
+					<li>
+						37022 Fumane (VR), Italy
+					</li>
+				</ul>
+			</article>
+		</section>
+
+		<footer>
+			<a href="https://www.facebook.com/marblegifts" target="_blank" class="social"><img alt="Facebook"
+					src="images/icons/fb.png" width="20" height="20"></a>
+			<a href="https://instagram.com/sve_studiosve" target="_blank" class="social"><img alt="Instagram"
+					src="images/icons/ig.png" width="20" height="20"></a>
+			<p>Copyright ©2020 SVE srl. All rights reserved.</p>
+		</footer>
+	</div>
 </body>
 
 </html>
