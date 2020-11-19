@@ -24,38 +24,99 @@
 			<button href="faqs.html" class="button" style="vertical-align:middle"><a href="faqs.html"
 					id="menubuttonback"><span>FAQs</span></a></button>
 		</nav>
-		<article id="copyright">
+		<article>
 			<section>
 				<p>This is our collection of products.</p>
-				<table>
-					<tr>
-						<th><img src="images/gallery/1.jpg" alt="T01"></th>
-						<th><img src="images/gallery/2.jpg" alt="T02"></th>
-						<th><img src="images/gallery/3.jpg" alt="T03"></th>
-						<th><img src="images/gallery/4.jpg" alt="T04"></th>
-					</tr>
-					<tr>
-						<th><img src="images/gallery/5.jpg" alt="T05"></th>
-						<th><img src="images/gallery/6.jpg" alt="T06"></th>
-						<th><img src="images/gallery/7.jpg" alt="T07"></th>
-						<th><img src="images/gallery/8.jpg" alt="T08"></th>
-					</tr>
-					<tr>
-						<th><img src="images/gallery/9.jpg" alt="T09"></th>
-						<th><img src="images/gallery/10.jpg" alt="T10"></th>
-						<th><img src="images/gallery/11.jpg" alt="T11"></th>
-						<th><img src="images/gallery/12.jpg" alt="T12"></th>
-						
-					</tr>
-					<tr>
-						<th><img src="images/gallery/13.jpg" alt="T13"></th>
-						<th><img src="images/gallery/14.jpg" alt="T14"></th>
-						<th><img src="images/gallery/15.jpg" alt="T15"></th>
-						<th><img src="images/gallery/16.jpg" alt="T16"></th>
-					</tr>
-				</table>
-				<img src="images//icons/home.png" alt="Home" id="homepic"></th>
-				<p>Find out more styles by clicking <a href="https://www.studiovertueurope.com/gallery.html/">here</a>.</p>
+				<form onsubmit="download(this['size'].value, this['text'].value)">
+					<table id="catalogue">
+						<tr>
+							<th><img src="images/gallery/1.jpg" alt="T01"><label>T01
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/2.jpg" alt="T02"><label>T02
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/3.jpg" alt="T03"><label>T03
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/4.jpg" alt="T04"><label>T04
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+						</tr>
+						<tr>
+							<th><img src="images/gallery/5.jpg" alt="T05"><label>T05
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/6.jpg" alt="T06"><label>T06
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/7.jpg" alt="T07"><label>T07
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/8.jpg" alt="T08"><label>T08
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+						</tr>
+						<tr>
+							<th><img src="images/gallery/9.jpg" alt="T09"><label>T09
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/10.jpg" alt="T10"><label>T10
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/11.jpg" alt="T11"><label>T11
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/12.jpg" alt="T12"><label>T12
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+
+						</tr>
+						<tr>
+							<th><img src="images/gallery/13.jpg" alt="T13"><label>T13
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/14.jpg" alt="T14"><label>T14
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/15.jpg" alt="T15"><label>T15
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+							<th><img src="images/gallery/16.jpg" alt="T16"><label>T16
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label></th>
+						</tr>
+					</table>
+					<p>Select size:</p>
+					<input type="radio" id="4" name="size" value="4 inches (10.16 x 10.16 cm)">
+					<label for="4">4" (15.16 x 15.16 cm)</label><br>
+					<input type="radio" id="6" name="size" value="6 inches (15.24 x 15.24 cm)">
+					<label for="6">6" (15.24 x 15.24 cm)</label><br>
+					<input type="radio" id="8" name="size" value="8 inches (20.32 x 20.32 cm)">
+					<label for="8">8" (20.32 x 20.32 cm)</label><br>
+					<input type="submit" id="submit" value="Submit">
+				</form>
+				<p><a href="index.html">
+						<img src="images/icons/home.gif" alt="homepage-link" id="homepic">
+					</a></p>
+				<p>Find out more styles by clicking <a href="https://www.studiovertueurope.com/gallery.html/">here</a>.
+				</p>
 			</section>
 		</article>
 		<footer>
@@ -65,6 +126,7 @@
 					src="images/icons/ig.png" width="20" height="20"></a>
 			<p>Copyright ©2020 SVE srl. All rights reserved.</p>
 		</footer>
+	</div>
 </body>
 
 </html>
