@@ -261,11 +261,7 @@ a#serietvs {
     font: 95% Arial, Helvetica, sans-serif;
 }
 
-.form-style-6 input[type="text"]:focus, .form-style-6 input[type="date"]:focus, .form-style-6 input[type="datetime"]:focus, .form-style-6 input[type="email"]:focus, .form-style-6 input[type="number"]:focus, .form-style-6 input[type="search"]:focus, .form-style-6 input[type="time"]:focus, .form-style-6 input[type="url"]:focus, .form-style-6 textarea:focus, .form-style-6 select:focus {
-    box-shadow: 0 0 5px #191919;
-    padding: 3%;
-    border: 1px solid #191919;
-}
+
 
 .form-style-6 input[type="submit"], .form-style-6 input[type="button"] {
     box-sizing: border-box;
