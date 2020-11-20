@@ -22,7 +22,6 @@
     zoom: 1.0;
 }
 
-
 /*GENRAL TAGS*/
 
 body {
@@ -57,16 +56,7 @@ nav {
     border-radius: 5px;
     text-align: center;
 }
-/*
-aside {
-    background-color: #111111;
-    border: 1px solid #111111;
-    float: left;
-    margin: 0 auto;
-    border-radius: 5px;
-    display: block;
-}
-*/
+
 article {
     min-height: 430px;   
     background-color: #191919;
@@ -125,17 +115,6 @@ th.answer {
     background-color: #191919;
     font-family: product_sans_light;
     font-weight: lighter;
-}
-
-/*not used*/
-a.pulsantimenu {
-    min-height: 40px;
-    background-color: #191919;
-    color: #ffffff;
-}
-
-a:hover, a:active {
-    background-color: #111111;
 }
 
 /*CLASSES*/
@@ -281,6 +260,7 @@ a:hover, a:active {
 }
 
 /*IDs*/
+
 #container {
     margin: 0 auto;
 }
@@ -302,12 +282,6 @@ a:hover, a:active {
     width: 5%;
     height: auto;
     border-radius: 50%;
-}
-
-#normalpic {
-    border-radius: 50%;
-    max-width: 100%;
-    height: auto;
 }
 
 #faqs{
